@@ -27,10 +27,10 @@ public:
     void update() override {
         if (pir.available()) { 
             if (pir.objectDetected()) {
-                publish_state(1); // when object is detected, pass the number 1 on to Home Assistant
+                publish_state(1); // when object is detected, pass the number 1 on to ESPHome & Home Assistant
             }
             if (pir.objectRemoved()) {
-                publish_state(0); // when object is removed, pass the number 0 on to Home Assistant
+                publish_state(0); // when object is removed, pass the number 0 on to ESPHome & Home Assistant
             }
             pir.clearEventBits(); // clear everything for new measurement
         }
