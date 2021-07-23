@@ -1,0 +1,15 @@
+esphome:
+  includes:
+    - CustomSensor_PIR.h
+  libraries:
+    - "SparkFun Qwiic PIR Library"
+
+sensor:
+  - platform: custom
+    lambda: |-
+      auto my_SFPIR = new CustomSFPIR();
+      App.register_component(my_SFPIR);
+      return {my_SFPIR};
+
+    sensors:
+      name: "SparkFun PIR"
