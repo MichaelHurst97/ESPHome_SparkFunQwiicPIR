@@ -1,4 +1,4 @@
-# ESPHome_SparkFunQwiicPIR
+# ESPHome SparkFun Qwiic PIR Custom Sensor Support
 ESPHome custom sensor support for the SparkFun Qwiic PIR passive infrared sensor.
 https://learn.sparkfun.com/tutorials/qwiic-pir-hookup-guide
 
